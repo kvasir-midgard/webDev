@@ -1,0 +1,94 @@
+/* Can order by order of elements on the page or by specificity */
+
+/* -------------------- Element tags least specific --------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #c2e59c;  /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+}
+
+h1 {
+    background-color: #2980B9;
+    color: #F2F2F2;
+    margin: 0;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+input {
+    font-size: 18px;
+    background-color: #F2F2F2;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #2980B9;
+    border: 3px solid #F2F2F2;
+}
+
+input:focus {
+    background-color: white;
+    border: 3px solid #2980B9;
+    outline: none;
+}
+
+li {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666666;
+}
+
+/* Every other li */
+li:nth-child(2n) {
+    background-color: #F2F2F2;
+}
+
+span {
+    background-color: #E74C3C;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 150ms linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- Class tags -------------------- */
+
+.fa-plus {
+    float: right;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* -------------------- ID tags -------------------- */
+
+#container {
+    background-color: #F2F2F2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid gray; */
+    width: 400px;
+    margin: 100px auto;
+}

@@ -1,0 +1,50 @@
+/*
+An Element will select all elements of that type
+Good for selecting all items of that class
+li {}
+
+A class will select all in that class 
+good multiple items
+.classTitle {}
+
+An id is good for selecting a specific item
+#idName {}
+*/
+
+
+/*Star selects everything on the page*/
+* {
+	border: 1px solid black;
+}
+
+/*Descendant selector*/
+/*Selects ebverything that is an anchor tag inside of an li*/
+li a { 
+	color: red;
+}
+
+/*Adjacent Selector*/
+/*selects elemts that come after an element*/
+h4 + ul {
+	border: 2px solid blue;
+}
+
+/*Attribute Selector*/
+/*select elemnts based on any attribute*/
+a[href="http://google.com"] {
+	background: green;
+}
+
+input[type="checkbox"] {
+	background = pink;
+}
+
+/*nth type*/
+/*select every 5th div or second li*/
+ul:nth-of-type(3) {
+	background-color: purple;
+}
+
+li:nth-of-type(3) {
+	background-color: pink;
+}

@@ -1,0 +1,132 @@
+-------------------------------------------------------------------------------
+HTML Forms
+Getting User Input
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Objectives
+-------------------------------------------------------------------------------
+Use the <form></form> tag
+Use the <input> tag
+Use the <label></label> tag
+Write Simple Validations
+
+-------------------------------------------------------------------------------
+The <form> tag
+
+action - the URL to send form data to
+method - the type of HTTP request 
+
+Until we cover Back End JS, our forms won't actually do anything
+-------------------------------------------------------------------------------
+
+<form action="/my-form-submitting-page" method="post">
+    <!-- All our inputs will go in here -->
+</form>
+
+-------------------------------------------------------------------------------
+The <input> tag
+
+The Input tag creates interactive controls.   
+The "type" attribute determines the type of input
+-------------------------------------------------------------------------------
+
+<input type="text">
+
+<input type="date">
+
+<input type="color">
+
+<input type="file">
+
+<input type="checkbox">
+
+-------------------------------------------------------------------------------
+A Simple Form
+-------------------------------------------------------------------------------
+
+<h1>Sign In</h1>
+
+<form action="/sign-in-url" method="post">
+    <input type="text">
+    <input type="password">
+    <button>Login</button>
+</form>
+
+-------------------------------------------------------------------------------
+Labels
+-------------------------------------------------------------------------------
+
+<form action="/sign-in-url" method="post">
+    <label>Username: <input type="text"></label>
+    <label>Password: <input type="password"></label>
+    <button>Login</button>
+</form>
+
+-------------------------------------------------------------------------------
+Alternate syntax, using "for" and  "id" attributes
+-------------------------------------------------------------------------------
+
+<form action="/sign-in-url" method="post">
+    <label for="username">Username:</label>
+    <input id="username" type="text">
+    <label for="password">Password:</label>
+    <input id="password" type="password">
+    <button>Login</button>
+</form>
+
+-------------------------------------------------------------------------------
+Simple Validations
+-------------------------------------------------------------------------------
+
+The 'required' attribute validates that an input is not empty
+There are also type validations.  Try changing "type" from "text" to "email"
+
+<form action="/sign-in-url" method="post">
+    <label for="email">Email:</label>
+    <input id="email" type="email" required>
+    <label for="password">Password:</label>
+    <input id="password" type="password" required>
+    <button>Login</button>
+</form>
+
+-------------------------------------------------------------------------------
+A More Complicated Form
+-------------------------------------------------------------------------------
+
+<form action="/some-server-somewhere" method="post">
+  <div>
+    <label for="name">Text Input:</label>
+    <input type="text" id="name" placeholder="Doc Brown" />
+  </div>
+
+    <label for="radio-choice-1">Choice 1</label>
+    <input type="radio" id="radio-choice-1" value="choice-1" />
+
+    <label for="radio-choice-2">Choice 2</label>
+    <input type="radio" id="radio-choice-2" value="choice-2" />
+ 
+
+  <div>
+    <label for="select-choice">Select Dropdown Choice:</label>
+    <select id="select-choice">
+      <option value="Dogs">Dogs</option>
+      <option value="Cats">Cats</option>
+      <option value="Both">Both</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="textarea">Textarea:</label>
+    <textarea cols="40" rows="4" id="textarea"></textarea>
+  </div>
+
+  <div>
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" id="checkbox" />
+  </div>
+
+  <div>
+    <input type="submit" value="Submit" />
+  </div>
+</form>  

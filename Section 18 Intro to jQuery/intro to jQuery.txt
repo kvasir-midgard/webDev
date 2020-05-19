@@ -1,0 +1,52 @@
+jQuery Intro
+
+Downloading jQuery and link to it locally
+
+<script type="text/javascript" src="jquery.js"></script>
+
+jQuery Selectors
+
+$("selectorGoesHere")
+
+Similar to querySelectAll
+
+// select all img tags
+$("img")
+
+// select all elements with class 'sale'
+$(".sale")
+
+// select element with id 'bonus'
+$("#bonus")
+
+// select all a tags inside pf li's
+$("li a")
+
+Manipulating Styles
+.css(property, value)
+
+$("h1").css("border", "2px solid red");
+
+// can also pass an object with styles
+var styles = {
+    backgroundColor : "pink",
+    fontWeight : "bold"
+};
+
+$("h1").css(styles);
+
+We can also do it in place
+
+$("h1").css({
+    backgroundColor : "pink",
+    fontWeight : "bold"
+});
+
+Common jQuery Methods
+- val()
+- text()
+- attr()
+- html()
+- addClass()
+- removeClass()
+- toggleClass()

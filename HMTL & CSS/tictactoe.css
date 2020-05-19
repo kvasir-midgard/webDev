@@ -1,0 +1,28 @@
+body {
+	text-size: 16px;
+}
+
+h1 {
+	margin: 50px;
+	text-size: 2.0em;
+	text-align: center;
+}
+
+table {
+	margin: auto;
+}
+
+td {
+	width: 100px;
+	height: 100px;
+}
+
+.vert {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.horiz {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}

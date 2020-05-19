@@ -1,0 +1,104 @@
+-------------------------------------------------------------------------------
+History of HTML
+-------------------------------------------------------------------------------
+Created in 1989/1990
+Allowed publishing and exchanging of scientific  and technical documents
+Allowed electronic linking of documents via hyperlinks
+
+-------------------------------------------------------------------------------
+The General Rule
+-------------------------------------------------------------------------------
+<tagName> Some Content </tagName>
+
+-------------------------------------------------------------------------------
+Every HTML document we create will start with this boilerplate:
+-------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Our metadata goes here -->
+  <title></title>
+</head>
+<body>
+
+<!-- Our content goes here -->
+
+</body>
+</html>
+
+Comments
+<!-- This is a comment.  It doesn't do anything! -->
+
+-------------------------------------------------------------------------------
+Common Tags
+-------------------------------------------------------------------------------
+<h1>I'm a header </h1>
+<h2>I'm a slightly smaller header </h2>
+<h6>I'm the smallest header </h6>
+
+<p>I'm a paragraph</p>
+
+<button>I'm a button!</button>
+
+<ul>
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+</ul>
+
+
+<ol>
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+</ol>
+
+-------------------------------------------------------------------------------
+* MDN Element Reference *
+-------------------------------------------------------------------------------
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+-------------------------------------------------------------------------------
+Closing Tags
+-------------------------------------------------------------------------------
+<h1>I need a closing tag </h1>
+
+<p>Me too!</p>
+
+-------------------------------------------------------------------------------
+Self=Closing Tags
+-------------------------------------------------------------------------------
+<!-- No closing tag or inner text needed -->
+
+<img src="corgi.png">
+
+<link href="style.css">
+
+<!-- Don't worry about what these tags do yet -->
+
+-------------------------------------------------------------------------------
+Attributes: Adding Additional Information To Tags
+-------------------------------------------------------------------------------
+<tag name="value"></tag>
+<img src="corgi.png">
+
+<p class="selected">woof woof</p>
+
+<a href="www.google.com">Click me to go to Google</a>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+-------------------------------------------------------------------------------
+* MDN Atribute Reference *
+-------------------------------------------------------------------------------
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+
+-------------------------------------------------------------------------------
+Images
+-------------------------------------------------------------------------------
+<img src="corgi.png">
+
+-------------------------------------------------------------------------------
+Links
+-------------------------------------------------------------------------------
+<a href="www.google.com">Click me to go to Google</a>
+<a href="www.reddit.com">Click me to go to Reddit</a>
+<a href="url">Link Text</a>

@@ -1,0 +1,39 @@
+function testIFEL(){
+
+	var toPrint ="";
+
+	if(age < 0){
+		toPrint = "AGE UNDER LIMIT ERROR!"
+		return;
+	}
+
+	else if(age < 18){
+		toPrint = "Nope Not Allowed!";
+	} 
+
+	else if(age < 21){
+		toPrint = "Can't Drink Champ"
+	}
+
+	else{
+		toPrint = "Here's your wristband"
+	}
+
+	if(age === 21){
+		toPrint += "\n    Happy Birthday, here's a shot on the house"
+	}
+
+	if(age > 0){
+		if(age % 2 !== 0){
+			toPrint += "\n    Cool, you're age is odd"
+		\
+
+		if(Math.sqrt(age) % 1 === 0){
+			toPrint += "\n    Cool, you're age is a perfect square"
+		}
+	}
+
+	toPrint += "\n    Age is " + age
+
+	alert(toPrint);
+}

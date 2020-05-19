@@ -1,0 +1,19 @@
+img {
+	/*3 Pictures by 30% => 90% used*/
+	/*10% for six space gaps => 1.66*/
+	width: 30%;
+	height: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 1.66%;
+	font-size: 26px;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-bottom: 3px solid #E2E2E2;
+	width: 96.64%;
+	padding-bottom: 40px;
+}

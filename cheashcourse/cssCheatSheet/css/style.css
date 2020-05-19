@@ -1,0 +1,185 @@
+/* 
+
+selector{ property: value; } 
+margin: top right bottom left;
+margin: top/bottom left/right;
+margin: top/bottom/left/right;
+*/
+
+/*
+*{
+	margin: 0;
+	padding: 0;
+}
+*/
+
+body{
+	background-color: #f4f4f4;
+	color: #555555;
+	/*	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	*/
+	font: normal 16px Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: red;
+}
+
+a:active{
+	color:green;
+}
+
+/*a:visited{
+	color: black;
+}*/
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.button{
+	background-color: #333333;
+	color: #ffffff;
+	padding: 10px 15px;
+	border: none;
+}
+
+.clr{
+	clear: both;
+}
+
+.box-1{
+	background-color: #333333;
+	color: #ffffff;
+	border: 5px solid #555555;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.box-1 h1{
+	font-family: Tahoma;
+	font-weight: 800;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;	
+}
+
+.box-2{
+	border: 5px solid #000000;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.catagories{
+	border: 5px solid #cccccc;	
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.catagories h2{
+	text-align: center;
+}
+
+.catagories ul{
+	padding: 10px;
+	list-style: none;
+}
+
+.catagories li{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #999999;
+	list-style-image: url('../images/checkmarksmall.png');
+}
+
+.my-form{
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.my-form .form-group{
+	padding-bottom: 15px;
+}
+
+.my-form label{
+	display: block;
+}
+
+.my-form input:not([type="submit"]), .my-form textarea{
+	padding: 8px;
+	width: 100%;
+}
+
+.block{
+	float: left;
+	width: 33.3%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+}
+
+.p-box{
+	width: 800px;
+	height: 200px;
+	margin-top: 30px;
+	border: 1px solid #333333;
+	position: relative;
+}
+
+.p-box h1{
+	position: absolute;
+	top: 50px;
+	left: 200px;
+}
+
+.p-box h2{
+
+}
+
+.fix-me{
+	position: fixed;
+	top: 100px;
+}
+
+.my-list li:first-child{
+	color:red;
+}
+
+.my-list li:last-child{
+	color:blue;
+}
+
+.my-list li:nth-child(5){
+	color:green;
+}
+
+.my-list li:nth-child(even){
+	color:orange;
+}
+
+#main-block{
+	float: left;
+	width: 70%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	padding: 15px;
+	background-color: #333333;
+	color: #ffffff;
+	box-sizing: border-box;
+}

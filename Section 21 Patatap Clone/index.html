@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circles</title>
+
+    <!-- Style Assets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Script Assets -->
+    <script type="text/javascript" src="assets/js/lib/paperjs-v0.12.0/dist/paper-full.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- function onKeyDown(event) {
+        var r = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var s = Math.floor(Math.random() * 100);
+        var x = Math.floor(Math.random() * 2000);
+        var y = Math.floor(Math.random() * 1000);
+        new Path.Circle(new Point(x, y), s).fillColor = "rgb(" + r + ", " + g + ", " + b + ")";
+    } -->
+    <script type="text/paperscript" canvas="myCanvas">
+        var circles = [];
+
+		function onKeyDown(event) {
+            var maxPoint = new Point(view.size.width, view.size.height);
+            var randomPoint = Point.random();
+            var point = maxPoint * randomPoint;
+            var newCircle = new Path.Circle(point, 500)
+            newCircle.fillColor = "orange";
+            circles.push(newCircle);
+		}
+
+		function onFrame(event){
+			for(var i = 0; i < circles.length; i++){
+				circles[i].fillColor.hue += 2;
+				circles[i].scale(.9);
+			}
+		}
+    </script>
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html> 

@@ -1,0 +1,31 @@
+<h1>Results Page</h1>
+
+<% if(data["Response"] === "True"){ %>
+    <table style="width:80%; text-align:left;">
+            <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Year</th> 
+            </tr>
+            <tr></tr>
+            <% data["Search"].forEach(function(movie){ %>
+                <tr>
+                    <th><%= movie.Title %></th>
+                    <th><%= movie.Type %></th>
+                    <th><%= movie.Year %></th> 
+                </tr>
+            <% }); %>
+        </table>
+<% } else { %>
+    <strong>Error: <%= data["Error"]; %></strong>
+<% } %>
+<%  %>
+<%  %>
+<%  %>
+<%  %>
+<%  %>
+<%  %>
+<%  %>
+<%  %>
+<%  %>
+<%  %>

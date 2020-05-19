@@ -1,0 +1,48 @@
+/*All li's will inherit the parent object ul traits*/
+
+/*Least specific Type selectors*/
+
+body {
+	color: red;
+}
+
+ul {
+	color: purple;
+}
+
+p {
+	color: green;
+}
+
+li {
+	color: orange;
+}
+
+li a {
+	color: orange;
+}
+
+li + a {
+	color: orange;
+}
+
+/*Class, attribute, and pseudo selectors*/
+/*more specific*/
+
+.highlight {
+	color: blue;
+}
+
+input[type="text"] {
+
+}
+
+a:hover
+input:checked
+
+/*ID selectors*/
+/*most specific*/
+
+#test {
+	color: pink;
+}
